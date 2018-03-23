@@ -34,6 +34,8 @@ function checkLocation() {
           card.setAttribute('class', 'card col-12 col-sm-10 col-md-4');
           const shopName = document.createElement('h2');
           shopName.textContent = items[i].name;
+          const highlight = document.createElement('div');
+          highlight.setAttribute('class', 'highlight');
           const shopAddress = document.createElement('p');
           shopAddress.textContent = items[i].location.address1;
           const shopDistance = document.createElement('span');
@@ -45,19 +47,25 @@ function checkLocation() {
           card.appendChild(shopName);
           card.appendChild(shopAddress);
           card.appendChild(shopDistance);
+           // Get Yelp page link
+           const ul = document.createElement('ul');
+           const li1 = document.createElement('li');
+           const goToYelp = document.createElement('a');
+           goToYelp.innerHTML = '<i class="fab fa-yelp"></i>';
+           goToYelp.href = items[i].url;
+           searchGoogle.setAttribute('class', 'yelp-link');
+           card.appendChild(ul);
+           ul.appendChild(li1);
+           li1.appendChild(goToYelp);
           // Make a link to search in Google
           var googleSearchUrl = "https://www.google.com/search?q=" + items[i].name.replace(" ", "+") + "+coffee";
+          const li2 = document.createElement('li');
           const searchGoogle = document.createElement('a');
           searchGoogle.innerHTML = '<i class="fab fa-google"></i>';
           searchGoogle.href = googleSearchUrl;
           searchGoogle.setAttribute('class', 'google-search');
-          card.appendChild(searchGoogle);
-          // Get Yelp page link
-          const goToYelp = document.createElement('a');
-          goToYelp.innerHTML = '<i class="fab fa-yelp"></i>';
-          goToYelp.href = items[i].url;
-          searchGoogle.setAttribute('class', 'yelp-link');
-          card.appendChild(goToYelp);
+          ul.appendChild(li2);
+          li2.appendChild(searchGoogle);       
           // Get photo
           if (items[i].image_url) {
             const wrapper = document.createElement('div');
@@ -91,7 +99,8 @@ function getBg() {
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
       data = JSON.parse(this.responseText);
-      document.body.style = "background: url(" + data.urls.regular + ") no-repeat; background-size: cover;";
+      var header = document.getElementById('header');
+      header.style = "background: url(" + data.urls.regular + ") no-repeat; background-size: cover;";
     }
   });
   xhr.send(data);

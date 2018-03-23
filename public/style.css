@@ -1,50 +1,62 @@
-@import url("https://fonts.googleapis.com/css?family=Dosis|Fredericka+the+Great|Fredoka+One|Happy+Monkey|Jura|Mandali|Mina|Rubik:400,500|Saira+Semi+Condensed");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great|Quicksand:400,500,700");
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 1.3em;
-  color: #FCFAF9; }
+  color: #FFFAFB; }
 
 h2 {
   font-family: 'Fredericka the Great', sans-serif;
-  color: #CA2E55;
+  color: #EE4D5F;
   font-size: 2em;
-  padding: 0.5em; }
+  padding: 0.5em;
+  font-weight: 400;
+  z-index: 1; }
 
-p {
-  padding: 0.5em; }
+p, span {
+  padding: 0.5em;
+  margin: 0.5em; }
 
 #message {
-  padding: 2em;
-  color: #FCFAF9;
-  font-size: 1.7em;
-  font-weight: 700; }
+  background: linear-gradient(45deg, #FFCDA5, #EE4D5F);
+  padding: 0.2em 2em;
+  border-radius: 1em;
+  color: #FFFAFB;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-top: 2em; }
 
 a {
-  color: #F5F3BB; }
+  color: #61F1BF; }
 
 .card p {
-  color: #412722;
+  color: #9D6E72;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 0.9em; }
 .card a {
-  color: #CA2E55; }
+  color: #EE4D5F; }
 
 .distance {
   text-align: left;
-  background-color: #7C6C77;
+  background-color: #FFCDA5;
   border-radius: 1em;
-  padding: 0.3em 1em;
+  padding: 0.1em 1em;
   margin-left: 0;
   margin-right: auto;
+  margin-bottom: 1em;
   font-weight: 700;
-  color: #FCFAF9; }
+  color: #FFFAFB; }
 
-.yelp-link, .google-search {
-  color: #CA2E55; }
-  .yelp-link i, .google-search i {
-    display: inline-block;
-    font-size: 1.5em; }
+.yelp-link {
+  margin-right: 0.5em; }
+  .yelp-link i {
+    font-size: 1.7em; }
+
+.google-search i {
+  color: #61F1BF;
+  font-size: 1.7em; }
 
 footer p {
   padding: 0; }
@@ -54,48 +66,82 @@ footer p:nth-child(2) {
 body {
   padding: 0;
   box-sizing: border-box;
-  background-color: #555; }
+  background-color: #6E5954; }
+
+ul {
+  list-style-position: outside;
+  list-style-type: none;
+  padding: 0; }
+
+li {
+  text-decoration: none;
+  display: inline; }
 
 .container-fluid {
-  padding: 3em 0;
-  background-color: rgba(138, 101, 82, 0.9); }
+  padding: 0; }
 
 .row {
   margin-left: 0;
   margin-right: 0; }
 
+#header {
+  background-color: #555;
+  padding: 1em;
+  margin-bottom: 3em; }
+
+#arrow {
+  position: relative;
+  bottom: -2.5em;
+  text-align: center;
+  z-index: 9999; }
+  #arrow span {
+    font-size: 2em;
+    background: #FFFAFB;
+    color: #EE4D5F;
+    display: inline;
+    margin: auto;
+    border-radius: 1em;
+    padding: 0.18em 0.5em;
+    box-shadow: rgba(65, 39, 34, 0.5) 0 0.3em 1em 0; }
+
 .card {
   background-color: #FCFAF9;
   box-shadow: rgba(65, 39, 34, 0.5) 0 0.3em 1em 0;
-  padding: 2em;
+  padding: 0.2em 2em;
   margin: 0.5em;
   border: none;
   overflow: hidden;
   border-radius: 0.5em; }
 
+.highlight {
+  position: absolute;
+  left: 0;
+  top: 2em;
+  background-color: #FFE2CC;
+  height: 1.4em;
+  width: 80%;
+  z-index: 0; }
+
 #map {
   height: 300px; }
 
 .yelp-photo-wrapper {
-  position: absolute;
-  right: -225px;
-  bottom: -225px; }
+  margin: 1em -2em -2em -2em;
+  position: relative; }
 
 .yelp-photo {
-  box-shadow: 0 0.2em 0.5em 0.2em #555;
-  width: 450px;
-  height: 450px;
-  border-radius: 450px; }
+  height: 300px; }
 
 footer {
-  color: #B49D90;
+  margin-top: 2em;
   padding: 3em 1em 1em 1em;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(97, 241, 191, 0.3); }
 
 #cup {
   animation: float 2s infinite;
-  -webkit-animation: float 2s infinite; }
+  -webkit-animation: float 2s infinite;
+  margin-top: 3em; }
 
 @keyframes float {
   0% {

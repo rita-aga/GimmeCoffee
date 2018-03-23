@@ -15,7 +15,7 @@ console.log('Listening on port 3000 for socket...');
 var Yelp = require('yelp-v3');
 
 var yelp = new Yelp({
-  access_token: process.env.YelpAPIKey,
+  access_token: 'AB8I50v8YS2sS1Z7b0J3nsvgMlDTRSedzadMXrKEodU7JT3NWTLkxc4smjRpU6NC_LK3qmf7JEC--5Vjl4rEZFCH-dqjl1X4moQHGuuqjb3LF0PqvaW9a2pS-P-qWnYx',
 });
 
 // Serve index.html
