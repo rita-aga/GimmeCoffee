@@ -53,7 +53,7 @@ function checkLocation() {
            const goToYelp = document.createElement('a');
            goToYelp.innerHTML = '<i class="fab fa-yelp"></i>';
            goToYelp.href = items[i].url;
-           searchGoogle.setAttribute('class', 'yelp-link');
+           goToYelp.setAttribute('class', 'yelp-link');
            card.appendChild(ul);
            ul.appendChild(li1);
            li1.appendChild(goToYelp);
