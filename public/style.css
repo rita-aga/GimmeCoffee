@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis|Fredericka+the+Great|Fredoka+One|Happy+Monkey|Jura|Mandali|Mina|Rubik:400,500|Saira+Semi+Condensed");
+body {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: #FCFAF9; }
+
+h2 {
+  font-family: 'Fredericka the Great', sans-serif;
+  color: #CA2E55;
+  font-size: 2em;
+  padding: 0.5em; }
+
+p {
+  padding: 0.5em; }
+
+#message {
+  padding: 2em;
+  color: #FCFAF9;
+  font-size: 1.7em;
+  font-weight: 700; }
+
+a {
+  color: #F5F3BB; }
+
+.card p {
+  color: #412722;
+  margin: 0;
+  padding: 0; }
+.card a {
+  color: #CA2E55; }
+
+.distance {
+  text-align: left;
+  background-color: #7C6C77;
+  border-radius: 1em;
+  padding: 0.3em 1em;
+  margin-left: 0;
+  margin-right: auto;
+  font-weight: 700;
+  color: #FCFAF9; }
+
+.yelp-link, .google-search {
+  color: #CA2E55; }
+  .yelp-link i, .google-search i {
+    display: inline-block;
+    font-size: 1.5em; }
+
+footer p {
+  padding: 0; }
+footer p:nth-child(2) {
+  font-size: 0.8em; }
+
+body {
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #555; }
+
+.container-fluid {
+  padding: 3em 0;
+  background-color: rgba(138, 101, 82, 0.9); }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+.card {
+  background-color: #FCFAF9;
+  box-shadow: rgba(65, 39, 34, 0.5) 0 0.3em 1em 0;
+  padding: 2em;
+  margin: 0.5em;
+  border: none;
+  overflow: hidden;
+  border-radius: 0.5em; }
+
+#map {
+  height: 300px; }
+
+.yelp-photo-wrapper {
+  position: absolute;
+  right: -225px;
+  bottom: -225px; }
+
+.yelp-photo {
+  box-shadow: 0 0.2em 0.5em 0.2em #555;
+  width: 450px;
+  height: 450px;
+  border-radius: 450px; }
+
+footer {
+  color: #B49D90;
+  padding: 3em 1em 1em 1em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+#cup {
+  animation: float 2s infinite;
+  -webkit-animation: float 2s infinite; }
+
+@keyframes float {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(8px); }
+  100% {
+    transform: translateY(0px); } }
+
+/*# sourceMappingURL=style.css.map */

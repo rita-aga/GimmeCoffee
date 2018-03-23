@@ -1,0 +1,24 @@
+{
+  "name": "gimmecoffee",
+  "version": "1.0.0",
+  "description": "App to find coffee shops nearby",
+  "main": "server.js",
+  "scripts": {
+    "start": "server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Rita Agafonova",
+  "license": "ICS",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "harp": "^0.25.0",
+    "mongodb": "^2.2.35",
+    "node-yelp-fusion": "^1.0.4",
+    "socket.io": "2.0.4",
+    "yelp-v3": "0.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}
